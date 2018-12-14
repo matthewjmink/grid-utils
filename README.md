@@ -7,8 +7,8 @@ All classes allow for an optional breakpoint to be specified. Breakpoints follow
 ### Bootstrap-esque (not Bootstrap dependent)
 Follows [Bootstrap](http://getbootstrap.com/) v4 breakpoints and class naming conventions.
 
-### No Bootstrap?
-This utility assumes you are using Bootstrap, but it's not necessary. If you are not using Bootstrap, you'll just need to import `_grid-utils-config.scss` into your project, since it contains necessary replacements to mixins and variables.
+### No Bootstrap? No Problem.
+This utility assumes you are using Bootstrap, but it's not necessary. If you are not using Bootstrap, you'll just need to import `grid-utils-no-bootstrap.scss` into your project instead (or `_grid-utils-config.scss` separately), since it contains necessary replacements to mixins and variables.
 
 Usage
 ===
@@ -62,3 +62,10 @@ Individual grid elements can span multiple columns and/or rows using `.gc-span-{
 * `{number}`: any number from `1` to `12`
 ### `.gr{-breakpoint}-span-{number}`
 * `{number}`: any number from `1` to `12`
+
+Custom Config
+===
+## Maximum Rows
+For specifying or spanning grid rows (probably to support IE/Edge), this utility outputs enough classes to support 100 rows. If you need more or want less (to reduce file size), you can override the `$max-grid-rows` variable in your config.
+### `$max-grid-rows`
+* *default: `100`*
