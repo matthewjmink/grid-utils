@@ -48,12 +48,9 @@ $max-grid-rows: 12 !default;
     }
 }
 
-// Default grid styles
-@include gu-grid(null);
-
 // Viewport specific grid styles
 @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
-        @include gu-grid($breakpoint);
+        @include gu-grid(if(map-get($grid-breakpoints, $breakpoint) == 0, null, $breakpoint));
     }
 }
