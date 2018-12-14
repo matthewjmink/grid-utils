@@ -5,6 +5,7 @@
     "main": "src/grid-utils.scss",
     "scripts": {
         "build": "node-sass src/grid-utils-no-bootstrap.scss dist/grid-utils.css && node-sass src/grid-utils-no-bootstrap.scss dist/grid-utils.min.css --output-style compressed",
+        "serve": "node serve.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -22,6 +23,9 @@
     },
     "homepage": "https://github.com/matthewjmink/grid-utils#readme",
     "devDependencies": {
-        "node-sass": "^4.11.0"
+        "autoprefixer": "^9.4.2",
+        "browser-sync": "^2.26.3",
+        "node-sass": "^4.11.0",
+        "postcss-cli": "^6.0.1"
     }
 }
