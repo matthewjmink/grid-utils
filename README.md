@@ -53,7 +53,7 @@ Individual grid elements can span multiple columns and/or rows using `.gc-span-{
 ### `.gc{-breakpoint}-span-{number}`
 * `{number}`: any number from `1` to `12`
 ### `.gr{-breakpoint}-span-{number}`
-* `{number}`: any number from `1` to `12`
+* `{number}`: any number from `1` to `$max-grid-rows`
 
 ---
 
