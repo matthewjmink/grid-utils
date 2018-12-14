@@ -60,5 +60,5 @@ Individual grid elements can span multiple columns and/or rows using `.gc-span-{
 Custom Config
 ===
 ### `$max-grid-rows`
-* *default: `100`*
-For specifying or spanning grid rows (probably to support IE/Edge), this utility outputs enough classes to support 100 rows. If you need more or want less (to reduce file size), you can override the `$max-grid-rows` variable in your config.
+* *default: `12`*
+For specifying or spanning grid rows (probably to support IE/Edge), this utility outputs enough classes to support 12 rows. If you need more or want less (to reduce file size), you can override the `$max-grid-rows` variable in your config.
