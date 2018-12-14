@@ -18,15 +18,11 @@ Set an element's display to grid using `.d-grid`.
 
 ### `.d{-breakpoint}-grid`.
 
----
-
 ## Number of columns
 Explicitly specify the column count using `.grid-{columns}`.
 
 ### `.grid{-breakpoint}-{columns}`
 * `{columns}`: any number from `1` to `12`
-
----
 
 ## Gutters
 Set horizontal and/or vertical gutters using `.gaps`.
@@ -45,16 +41,12 @@ Set horizontal and/or vertical gutters using `.gaps`.
     * `5` - `$spacer * 3`
     * *default is `3`*
 
----
-
 ## Specify Column/Row Position
 Used mainly to support IE/Edge, which don't have autoplacement for CSS Grid. Column and row numbers can be specified using `.gc-{columnNumber}` and `.gr-{rowNumber}` respectively.
 ### `.gc{-breakpoint}-{columnNumber}`
 * `{columnNumber}`: any number from `1` to `12`
 ### `.gr{-breakpoint}-{rowNumber}`
 * `{rowNumber}`: any number from `1` to `$max-grid-rows`
-
----
 
 ## Span Columns/Rows
 Individual grid elements can span multiple columns and/or rows using `.gc-span-{number}` and `.gc-span-{number}` respectively.
@@ -63,9 +55,10 @@ Individual grid elements can span multiple columns and/or rows using `.gc-span-{
 ### `.gr{-breakpoint}-span-{number}`
 * `{number}`: any number from `1` to `12`
 
+---
+
 Custom Config
 ===
-## Maximum Rows
-For specifying or spanning grid rows (probably to support IE/Edge), this utility outputs enough classes to support 100 rows. If you need more or want less (to reduce file size), you can override the `$max-grid-rows` variable in your config.
 ### `$max-grid-rows`
 * *default: `100`*
+For specifying or spanning grid rows (probably to support IE/Edge), this utility outputs enough classes to support 100 rows. If you need more or want less (to reduce file size), you can override the `$max-grid-rows` variable in your config.
