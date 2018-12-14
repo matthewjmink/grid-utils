@@ -1,4 +1,4 @@
-$max-grid-rows: 100 !default;
+$max-grid-rows: 12 !default;
 
 @mixin gu-grid-gaps($bp, $grid-gap-size: null) {
     $size: if($grid-gap-size, $grid-gap-size, 3);
