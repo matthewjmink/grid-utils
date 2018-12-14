@@ -1,0 +1,27 @@
+{
+    "name": "grid-utils",
+    "version": "1.0.0",
+    "description": "Custom grid solution using CSS grid",
+    "main": "src/grid-utils.scss",
+    "scripts": {
+        "build": "node-sass src/grid-utils-no-bootstrap.scss dist/grid-utils.css && node-sass src/grid-utils-no-bootstrap.scss dist/grid-utils.min.css --output-style compressed",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/matthewjmink/grid-utils.git"
+    },
+    "keywords": [
+        "CSS",
+        "Grid"
+    ],
+    "author": "Matt Mink",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/matthewjmink/grid-utils/issues"
+    },
+    "homepage": "https://github.com/matthewjmink/grid-utils#readme",
+    "devDependencies": {
+        "node-sass": "^4.11.0"
+    }
+}
