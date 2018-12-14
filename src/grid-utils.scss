@@ -1,0 +1,59 @@
+$max-grid-rows: 100 !default;
+
+@mixin gu-grid-gaps($bp, $grid-gap-size: null) {
+    $size: if($grid-gap-size, $grid-gap-size, 3);
+    $size-suffix: if($grid-gap-size, '-' + $grid-gap-size, '');
+    .gaps#{$bp}#{$size-suffix} {
+        grid-gap: map-get($spacers, $size);
+    }
+    .gaps#{$bp}-x#{$size-suffix} {
+        grid-column-gap: map-get($spacers, $size);
+    }
+    .gaps#{$bp}-y#{$size-suffix} {
+        grid-row-gap: map-get($spacers, $size);
+    }
+}
+
+@mixin gu-grid($breakpoint: null) {
+    $bp: if($breakpoint, '-' + $breakpoint, '');
+
+    .d#{$bp}-grid {
+        display: grid;
+    }
+
+    @include gu-grid-gaps($bp);
+    @for $grid-gap-size from 0 through 5 {
+        @include gu-grid-gaps($bp, $grid-gap-size);
+    }
+
+    @for $grid-col from 1 through 12 {
+        .grid#{$bp}-#{$grid-col} {
+            grid-template-columns: repeat(#{$grid-col}, 1fr);
+        }
+        .gc#{$bp}-#{$grid-col} {
+            grid-column-start: #{$grid-col};
+        }
+        .gc#{$bp}-span-#{$grid-col} {
+            grid-column-end: span #{$grid-col};
+        }
+    }
+
+    @for $grid-row from 1 through $max-grid-rows {
+        .gr#{$bp}-#{$grid-row} {
+            grid-row-start: #{$grid-row};
+        }
+        .gr#{$bp}-span-#{$grid-row} {
+            grid-row-end: span #{$grid-row};
+        }
+    }
+}
+
+// Default grid styles
+@include gu-grid(null);
+
+// Viewport specific grid styles
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        @include gu-grid($breakpoint);
+    }
+}

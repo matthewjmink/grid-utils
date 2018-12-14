@@ -8,7 +8,7 @@ All classes allow for an optional breakpoint to be specified. Breakpoints follow
 Follows [Bootstrap](http://getbootstrap.com/) v4 breakpoints and class naming conventions.
 
 ### No Bootstrap?
-This utility assumes you are using Bootstrap, but it's not necessary. If you are not using Bootstrap, you'll just need to import `_css-grid-config.scss` into your project, since it contains necessary replacements to mixins and variables.
+This utility assumes you are using Bootstrap, but it's not necessary. If you are not using Bootstrap, you'll just need to import `_grid-utils-config.scss` into your project, since it contains necessary replacements to mixins and variables.
 
 Usage
 ===
