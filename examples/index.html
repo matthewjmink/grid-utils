@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Grid Utils Examples</title>
-    <link rel="stylesheet" href="/grid/grid-utils.css">
+    <link rel="stylesheet" href="/grid/grid-utils.min.css">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -23,6 +23,23 @@
         <div class="ex-grid-item">Grid Item 10</div>
         <div class="ex-grid-item">Grid Item 11</div>
         <div class="ex-grid-item">Grid Item 12</div>
+    </div>
+
+    <h2>IE/Edge Friendly Grid</h2>
+    <h3>Uses <code>.gc-{columnNumber}</code> and <code>.gc-{rowNumber}</code> to manually place grid items.</h3>
+    <div class="d-grid grid-4">
+        <div class="ex-grid-item gc-1">Grid Item 1</div>
+        <div class="ex-grid-item gc-2">Grid Item 2</div>
+        <div class="ex-grid-item gc-3">Grid Item 3</div>
+        <div class="ex-grid-item gc-4">Grid Item 4</div>
+        <div class="ex-grid-item gc-1 gr-2">Grid Item 5</div>
+        <div class="ex-grid-item gc-2 gr-2">Grid Item 6</div>
+        <div class="ex-grid-item gc-3 gr-2">Grid Item 7</div>
+        <div class="ex-grid-item gc-4 gr-2">Grid Item 8</div>
+        <div class="ex-grid-item gc-1 gr-3">Grid Item 9</div>
+        <div class="ex-grid-item gc-2 gr-3">Grid Item 10</div>
+        <div class="ex-grid-item gc-3 gr-3">Grid Item 11</div>
+        <div class="ex-grid-item gc-4 gr-3">Grid Item 12</div>
     </div>
 
     <h2>Website Layout</h2>

@@ -4,7 +4,7 @@
     "description": "Custom grid solution using CSS grid",
     "main": "src/grid-utils.scss",
     "scripts": {
-        "build": "node-sass src/grid-utils-no-bootstrap.scss dist/grid-utils.css && node-sass src/grid-utils-no-bootstrap.scss dist/grid-utils.min.css --output-style compressed",
+        "build": "node-sass src/grid-utils-no-bootstrap.scss dist/grid-utils-no-prefix.css && postcss -o ./dist/grid-utils.css ./dist/grid-utils-no-prefix.css --no-map  && rm ./dist/grid-utils-no-prefix.css && postcss --use cssnano -o ./dist/grid-utils.min.css ./dist/grid-utils.css --no-map",
         "serve": "node serve.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -25,6 +25,7 @@
     "devDependencies": {
         "autoprefixer": "^9.4.2",
         "browser-sync": "^2.26.3",
+        "cssnano": "^4.1.7",
         "node-sass": "^4.11.0",
         "postcss-cli": "^6.0.1"
     }
