@@ -24,8 +24,10 @@ Explicitly specify the column count using `.grid-{columns}`.
 ### `.grid{-breakpoint}-{columns}`
 * `{columns}`: any number from `1` to `12`
 
-## Gutters
-Set horizontal and/or vertical gutters using `.gaps`.
+## Gaps
+Set horizontal and/or vertical gaps using `.gaps`.
+
+<p style="color: red;"><strong>Note:</strong> Gaps will not work in IE 10/11. You'll need to use margin, padding, or another approach.</p>
 
 ### `.gaps{-breakpoint}{-direction}{-size}`
  * `{direction}` *optional*
