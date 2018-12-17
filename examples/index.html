@@ -11,44 +11,53 @@
 <body>
     <h2>4 Column Basic Grid</h2>
     <div class="d-grid grid-4">
-        <div class="ex-grid-item">Grid Item 1</div>
-        <div class="ex-grid-item">Grid Item 2</div>
-        <div class="ex-grid-item">Grid Item 3</div>
-        <div class="ex-grid-item">Grid Item 4</div>
-        <div class="ex-grid-item">Grid Item 5</div>
-        <div class="ex-grid-item">Grid Item 6</div>
-        <div class="ex-grid-item">Grid Item 7</div>
-        <div class="ex-grid-item">Grid Item 8</div>
-        <div class="ex-grid-item">Grid Item 9</div>
-        <div class="ex-grid-item">Grid Item 10</div>
-        <div class="ex-grid-item">Grid Item 11</div>
-        <div class="ex-grid-item">Grid Item 12</div>
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+        <div>Grid Item 4</div>
+        <div>Grid Item 5</div>
+        <div>Grid Item 6</div>
+        <div>Grid Item 7</div>
+        <div>Grid Item 8</div>
+        <div>Grid Item 9</div>
+        <div>Grid Item 10</div>
+        <div>Grid Item 11</div>
+        <div>Grid Item 12</div>
     </div>
 
     <h2>IE/Edge Friendly Grid</h2>
     <h3>Uses <code>.gc-{columnNumber}</code> and <code>.gc-{rowNumber}</code> to manually place grid items.</h3>
     <div class="d-grid grid-4">
-        <div class="ex-grid-item gc-1">Grid Item 1</div>
-        <div class="ex-grid-item gc-2">Grid Item 2</div>
-        <div class="ex-grid-item gc-3">Grid Item 3</div>
-        <div class="ex-grid-item gc-4">Grid Item 4</div>
-        <div class="ex-grid-item gc-1 gr-2">Grid Item 5</div>
-        <div class="ex-grid-item gc-2 gr-2">Grid Item 6</div>
-        <div class="ex-grid-item gc-3 gr-2">Grid Item 7</div>
-        <div class="ex-grid-item gc-4 gr-2">Grid Item 8</div>
-        <div class="ex-grid-item gc-1 gr-3">Grid Item 9</div>
-        <div class="ex-grid-item gc-2 gr-3">Grid Item 10</div>
-        <div class="ex-grid-item gc-3 gr-3">Grid Item 11</div>
-        <div class="ex-grid-item gc-4 gr-3">Grid Item 12</div>
+        <div class="gc-1">Grid Item 1</div>
+        <div class="gc-2">Grid Item 2</div>
+        <div class="gc-3">Grid Item 3</div>
+        <div class="gc-4">Grid Item 4</div>
+        <div class="gc-1 gr-2">Grid Item 5</div>
+        <div class="gc-2 gr-2">Grid Item 6</div>
+        <div class="gc-3 gr-2">Grid Item 7</div>
+        <div class="gc-4 gr-2">Grid Item 8</div>
+        <div class="gc-1 gr-3">Grid Item 9</div>
+        <div class="gc-2 gr-3">Grid Item 10</div>
+        <div class="gc-3 gr-3">Grid Item 11</div>
+        <div class="gc-4 gr-3">Grid Item 12</div>
     </div>
 
     <h2>Website Layout</h2>
     <div class="d-grid grid-3">
-        <div class="gc-span-3 ex-grid-item">HEADER</div>
-        <div class="gr-span-2 ex-grid-item">SIDEBAR</div>
-        <div class="gc-span-2 ex-grid-item">CONTENT<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores minus velit magnam necessitatibus ex cum aspernatur quia quae, temporibus pariatur? Ad aspernatur doloribus accusamus! Sed magnam autem porro obcaecati?</div>
-        <div class="gc-span-2 ex-grid-item">CONTENT FOOTER</div>
-        <div class="gc-span-3 ex-grid-item">FOOTER</div>
+        <div class="gc-span-3">HEADER</div>
+        <div class="gr-span-2">SIDEBAR</div>
+        <div class="gc-span-2">CONTENT<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores minus velit magnam necessitatibus ex cum aspernatur quia quae, temporibus pariatur? Ad aspernatur doloribus accusamus! Sed magnam autem porro obcaecati?</div>
+        <div class="gc-span-2">CONTENT FOOTER</div>
+        <div class="gc-span-3">FOOTER</div>
+    </div>
+
+    <h2>IE/Edge Friendly Website Layout</h2>
+    <div class="d-grid grid-3">
+        <div class="gc-span-3">HEADER</div>
+        <div class="gr-span-2 gc-1 gr-2">SIDEBAR</div>
+        <div class="gc-span-2 gc-2 gr-2">CONTENT<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores minus velit magnam necessitatibus ex cum aspernatur quia quae, temporibus pariatur? Ad aspernatur doloribus accusamus! Sed magnam autem porro obcaecati?</div>
+        <div class="gc-span-2 gc-2 gr-3">CONTENT FOOTER</div>
+        <div class="gc-span-3 gc-1 gr-4">FOOTER</div>
     </div>
 </body>
 </html>

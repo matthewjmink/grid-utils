@@ -5,7 +5,7 @@ body {
     font-size: 18px;
     font-family: arial;
 }
-.ex-grid-item {
+.d-grid > div {
     padding: 20px;
     background: goldenrod;
     border: 2px solid #333;
